@@ -2,6 +2,7 @@ services:
   - type: web
     name: idanplus-stremio-live
     runtime: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     envVars:
